@@ -1,14 +1,12 @@
 #include "wifi.h"
 
-String server2 = "atencionbombero.disce.me";
-String uri2 = "/CategoriaAtencion";
-String data2 = "{\"categoria\":\"Arduino\", \"descripcion\": \"Prueba\", \"estado\": 1}";
-
+//Conexiones de entrada y salida arduino RX TX
 SoftwareSerial esp(8, 9);
 
 WifiClass::WifiClass() {
 
 }
+
 
 void WifiClass::setup() {
   esp.begin(115200);

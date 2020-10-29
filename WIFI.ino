@@ -1,12 +1,12 @@
 #include "wifi.h"
 
-String server = "http://192.168.1.58";
-String uri = "/registroAcademico-war/consulta/dni/getDni";
-String data = "{\"dni\":\"46218219\"}";
+String server = "http://127.0.1.1";
+String uri = "/master_path/getData";
+String data = "{\"value\":\"object\"}";
 void setup() {
   Serial.begin(9600);
   Wifi.setup();
-  Wifi.connect("AequilibriumIX", "19CH2ITLa1q");
+  Wifi.connect("SSID", "password SSID");
 }
 
 void loop() {
